@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/registrar.css">
+
+	<title>Iniciar secion</title>
+</head>
+<body>
+	<nav>
+		<div class="decoracion_navegador">
+			<div class="posicion-logo">
+				<a href="index.php">
+					<img src="img/Logo.png" class="posicion-logo">
+				</a>
+			</div>
+		</div>
+		<div class="caja_menu" id="div-menu"></div>
+		<div class="contenedor">
+			<button id="btn-abrir-popup" class="btn-abrir-popup">Login</button>
+			<div class="overlay" id="overlay">
+				<div class="popup" id="popup">
+					<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+					<h3>Bienvenido!</h3>
+					<h4>Ingresa tu correo electronico.</h4>
+					<form action="validar.php" method="POST">
+						<div class="contenedor-inputs">
+							<input type="email" placeholder="Email" name="Email">
+							<input type="password" placeholder="Password" name="Password">
+						</div>
+						<input type="submit" class="btn-submit" value="Ingresar">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="contenedor2">
+			<button id="btn-abrir-popup2" class="btn-abrir-popup2">Register</button>
+			<div class="overlay2" id="overlay2">
+				<div class="popup2" id="popup2">
+					<a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
+					<h3>Bienvenido!</h3>
+					<h4>Ingresa tu correo electronico.</h4>
+					<form action="registrar.php" method="POST">
+						<div class="contenedor-inputs2">
+							<input type="text" placeholder="Username" name="Usuario">
+							<input type="email" placeholder="Email" name="Email">
+							<input type="password" placeholder="Password" name="Password">
+							<input type="password" placeholder="Confirm password" name="Password2">
+						</div>
+						<input type="submit" class="btn-submit2" value="Registrar">
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="gif">
+		<img src="img/SeanMaltoElite.gif" width="100%" height="100%">
+		<div class="opacidad"></div>
+	</div>
+	<script src="js/popup.js"></script>
+</body>
+</html>
